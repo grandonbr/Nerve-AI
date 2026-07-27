@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NERVE AI | Arquitetos de Inteligência Digital</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Geist:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="font-body-md text-body-md">
+
+    <header
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto bg-surface/10 backdrop-blur-md border-b border-white/10">
+        <div class="font-display-lg text-headline-md tracking-tighter text-primary-container uppercase">NERVE AI</div>
+        <nav class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+            <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                href="#services">Serviços</a>
+            <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                href="#about">Sobre</a>
+            <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+                href="#contact">Contato</a>
+        </nav>
+        <button
+            class="scale-95 active:scale-90 transition-transform bg-primary-container text-on-primary font-bold px-6 py-2 rounded-full glow-button">
+            Get Started
+        </button>
+    </header>
+
+    <main class="relative">
+        <div class="scanline"></div>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center pt-24 hero-gradient overflow-hidden">
+            <div class="relative z-10 max-w-container-max mx-auto px-gutter text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 mb-6 glass rounded-full border border-primary-container/20">
+                    <span
+                        class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
+                    <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">System
+                        Live: v1.0.0</span>
+                </div>
+                <h1
+                    class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 max-w-4xl mx-auto leading-none">
+                    Transforme seu Futuro com <span class="text-primary-container">Inteligência Artificial</span> e
+                    Automação
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Criamos agentes de IA personalizados e sites de alta performance para escalar seu negócio com
+                    precisão técnica e inovação.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="#contact"
+                        class="bg-primary-container text-on-primary font-bold px-8 py-4 rounded-lg text-lg glow-button transition-transform hover:scale-105 active:scale-95">
+                        Começar Agora
+                    </a>
+                    <a href="#services"
+                        class="glass px-8 py-4 rounded-lg text-lg text-primary hover:bg-white/10 transition-all border border-white/10 flex items-center gap-2">
+                        Ver Serviços
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40 items-center">
+                <span class="material-symbols-outlined text-primary-container text-3xl">expand_more</span>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-section-gap px-gutter max-w-container-max mx-auto" id="services">
+            <div class="flex flex-col items-center mb-16 text-center">
+                <span
+                    class="font-label-sm text-label-sm text-primary-container uppercase tracking-[0.2em] mb-4">Especialidades</span>
+                <h2 class="font-headline-md text-headline-md text-on-surface">Arquitetura de Inteligência</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Card 1 -->
+                <div
+                    class="glass glass-hover p-8 rounded-xl relative group transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/20 transition-all">
+                    </div>
+                    <div class="mb-6">
+                        <span class="material-symbols-outlined text-primary-container text-4xl">smart_toy</span>
+                    </div>
+                    <div class="font-label-sm text-label-sm text-primary-container mb-2">01 // AI &amp; AUTOMATION</div>
+                    <h3 class="font-headline-md text-2xl text-on-surface mb-4">Automação + Agente de IA</h3>
+                    <p class="text-on-surface-variant font-body-md mb-6 leading-relaxed">
+                        Automação de atendimento, processos e fluxos de trabalho com agentes de IA customizados para a
+                        regra de negócio do seu cliente.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">OpenAI</span>
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">Python</span>
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">n8n</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="glass glass-hover p-8 rounded-xl relative group transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute -top-10 -right-10 w-32 h-32 bg-secondary-container/10 rounded-full blur-3xl group-hover:bg-secondary-container/20 transition-all">
+                    </div>
+                    <div class="mb-6">
+                        <span class="material-symbols-outlined text-secondary-container text-4xl">web</span>
+                    </div>
+                    <div class="font-label-sm text-label-sm text-secondary-container mb-2">02 // WEB DEV</div>
+                    <h3 class="font-headline-md text-2xl text-on-surface mb-4">Desenvolvimento de Sites</h3>
+                    <p class="text-on-surface-variant font-body-md mb-6 leading-relaxed">
+                        Presença digital moderna e otimizada. Interfaces responsivas, rápidas e focadas em conversão de
+                        alto nível.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">HTML/CSS/JS</span>
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">React</span>
+                        <span
+                            class="font-label-sm text-[10px] px-2 py-1 glass rounded uppercase border-white/5">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Feature Break -->
+        <section class="w-full h-[400px] relative overflow-hidden my-section-gap">
+            <div class="feature-bg w-full h-full opacity-40 grayscale hover:grayscale-0 transition-all duration-1000">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center px-gutter">
+                    <h2
+                        class="font-display-lg text-headline-md md:text-5xl text-primary-container mb-4 uppercase tracking-widest">
+                        Inovação sem limites</h2>
+                    <p class="font-label-sm text-label-sm text-on-surface">SOLUÇÕES ESCALÁVEIS PARA O AMANHÃ</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="relative overflow-hidden py-section-gap px-gutter" id="about">
+            <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none">
+            </div>
+
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Background visual -->
+                <div class="absolute inset-0 -z-10">
+                    <!-- Gradiente principal -->
+                    <div class="absolute bg-gradient-to-br from-primary/10 via-background to-background"></div>
+
+                    <!-- Glow -->
+                    <div class="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-primary/20 blur-[120px]">
+                    </div>
+
+                    <div
+                        class="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-primary/10 blur-[100px]">
+                    </div>
+
+                    <!-- Grid tecnológico -->
+                    <div class="absolute inset-0 opacity-[0.04]" style="background-image: 
+                    linear-gradient(to right, currentColor 1px, transparent 1px), 
+                    linear-gradient(to bottom, currentColor 1px, transparent 1px); 
+                    background-size: 60px 60px;">
+                    </div>
+                </div>
+
+                <!-- Cabeçalho -->
+                <div class="max-w-3xl mb-16">
+                    <span
+                        class="inline-flex items-center gap-2 mb-5 text-sm font-medium uppercase tracking-[0.2em] text-primary">
+                        <span class="w-8 h-px bg-primary"></span>
+                        Sobre a Nerve AI
+                    </span>
+
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
+                        Tecnologia inteligente para
+                        <span class="text-primary"> negócios que querem evoluir.</span>
+                    </h2>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+                    <!-- Texto -->
+                    <div class="space-y-6">
+                        <p class="text-xl md:text-2xl leading-relaxed font-medium">
+                            A Nerve AI transforma tecnologia em soluções que realmente fazem
+                            parte do seu negócio.
+                        </p>
+
+                        <p class="text-base md:text-lg leading-relaxed text-muted-foreground">
+                            Unimos Inteligência Artificial, automação e desenvolvimento web
+                            para criar experiências digitais mais inteligentes, eficientes
+                            e preparadas para o futuro.
+                        </p>
+
+                        <p class="text-base md:text-lg leading-relaxed text-muted-foreground">
+                            Entendemos os processos, desafios e objetivos de cada negócio
+                            para desenvolver soluções personalizadas que simplificam
+                            operações, fortalecem a presença digital e geram resultados
+                            de verdade.
+                        </p>
+
+                        <div class="pt-5">
+                            <p class="text-lg font-semibold">
+                                Tecnologia inteligente.
+                            </p>
+
+                            <p class="text-lg text-primary font-semibold">
+                                Soluções que fazem o seu negócio evoluir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-section-gap px-gutter max-w-4xl mx-auto" id="contact">
+            <div class="glass p-8 md:p-12 rounded-2xl border-white/5 relative overflow-hidden">
+                <div class="flex flex-col items-center mb-10 text-center">
+                    <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Vamos Conversar?</h2>
+                    <p class="text-on-surface-variant">Inicie sua jornada rumo à automação total hoje.</p>
+                </div>
+
+                <form id="contact-form" class="space-y-6 relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="font-label-sm text-label-sm text-primary-container uppercase"
+                                for="name">Nome</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all text-on-surface"
+                                id="name" name="name" placeholder="Seu nome completo" required type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-sm text-label-sm text-primary-container uppercase"
+                                for="email">Email</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all text-on-surface"
+                                id="email" name="email" placeholder="seu@email.com" required type="email" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label-sm text-label-sm text-primary-container uppercase"
+                            for="service">Serviço de interesse</label>
+                        <select
+                            class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all text-on-surface"
+                            id="service" name="service">
+                            <option value="automacao-ia">Automação + Agente de IA</option>
+                            <option value="desenvolvimento-site">Desenvolvimento de Site</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label-sm text-label-sm text-primary-container uppercase"
+                            for="message">Mensagem</label>
+                        <textarea
+                            class="w-full bg-surface-container-lowest border border-white/10 rounded-lg px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all text-on-surface"
+                            id="message" name="message" placeholder="Como podemos ajudar o seu negócio?" required
+                            rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-primary-container text-on-primary font-bold py-4 rounded-lg glow-button hover:scale-[1.02] active:scale-[0.98] transition-all"
+                        type="submit">
+                        Enviar Mensagem
+                    </button>
+                    <p id="form-feedback" class="text-center font-label-sm text-label-sm hidden"></p>
+                </form>
+
+                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary-container/5 rounded-full blur-[100px]">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="w-full py-section-gap px-gutter flex flex-col md:flex-row justify-between items-center gap-base bg-surface-container-lowest border-t border-white/5">
+        <div class="flex flex-col items-center md:items-start gap-4">
+            <div class="font-display-lg text-headline-md text-primary-container uppercase">NERVE AI</div>
+            <p class="font-label-sm text-label-sm text-primary-fixed-dim">© 2026 NERVE AI. TODOS OS DIREITOS RESERVADOS.
+            </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 font-label-sm text-label-sm uppercase">
+            <a class="text-on-tertiary-container hover:text-primary-container transition-opacity opacity-80 hover:opacity-100"
+                href="https://www.instagram.com/brun0santoss/" target="_blank">Instagram</a>
+            <a class="text-on-tertiary-container hover:text-primary-container transition-opacity opacity-80 hover:opacity-100"
+                href="https://wa.me/5581999983163" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

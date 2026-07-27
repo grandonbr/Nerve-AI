@@ -1,0 +1,72 @@
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.glass-hover:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.glow-button {
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+body {
+    background-color: #051424;
+    color: #d4e4fa;
+    overflow-x: hidden;
+}
+
+.scanline {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #00f0ff, transparent);
+    position: absolute;
+    opacity: 0.1;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.08) 0%, transparent 70%);
+}
+
+.feature-bg {
+    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjAs0dr-sFI14GcbOv1cQiziuqqUFZmyq5TVq0Bm-i5jJwINWLbmjey7NjDTcfeBg5HKlbhaFZzJy0cu7kj-v73LoTfHk96PR3fqlTOAvpGviapcOCpeKiCeCxCazwUUcQqrrlaCBJO-Z3JYeGVCBoyq3axFfQbWKmTWfZmc1L4cZt6by2Yw6CM7QUKIpshfE23w7-FxZU7aQq469PYxsX-Oa6tkAZJTERcfuh-5h7otr4ElmewJ3x');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Focus visível para acessibilidade de teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #00f0ff;
+    outline-offset: 2px;
+}
+
+/* Erro de validação nos campos */
+.input-error {
+    border-color: #ffb4ab !important;
+}
